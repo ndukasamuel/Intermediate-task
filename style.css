@@ -233,3 +233,20 @@ select{
     height: 100%;
     object-fit: cover;
 }
+
+/*  */
+@media(max-width:425px){
+    #Search{
+        width: 100px;
+        display: block;
+    }
+    .dropDown{
+        /* display: block; */
+        width: 200%;
+        margin-top: 2rem;
+    }
+    .drop{
+        width: 200px;
+        margin-top: 0.5rem;
+    }
+}
