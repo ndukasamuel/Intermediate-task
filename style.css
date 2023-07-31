@@ -210,23 +210,17 @@ select{
 
 }
 
-.countryModal{
-    position: fixed;
-    width: 100%;
-    height: 100px;
-}
-.Modal{
-    position: fixed;
+
+
+/* */
+.modal{
     display: flex;
     margin: 3rem;
-    /* justify-content: space-between; */
     align-content: center;
-    width: 50%;
 }
 
-.leftmodal{
-    width: 2rem;
-    height: auto;
+.leftModal{
+    width: 50%;
 }
 .leftModal img{
     width: 100%;
@@ -234,7 +228,89 @@ select{
     object-fit: cover;
 }
 
-/*  */
+.rightModal{
+    width: 50%;
+    margin: 2rem 10rem;
+}
+
+.rightModal h5{
+    font-size: 30px;
+    padding-bottom: 2rem;
+}
+
+.modalinfo{
+    display: flex;
+    width: 100%;
+    font-size: 20px;
+    justify-content:space-between;
+}
+
+.innerLeft{
+    letter-spacing: 1px;
+}
+.innerLeft p, .innerRight p{
+    margin-bottom: 0.4rem;
+}
+
+.innerLeft p > strong, .innerRight p > strong{
+    font-weight: 600;
+    margin-right: 0.5rem;
+}
+
+
+.back{
+    margin: 3rem;
+    background: var(--dark-bg);
+    border: 1px solid transparent;
+    width: 10rem;
+    height: 3rem;
+    border-radius: 4px;
+    color: var(--text-color);
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+}
+
+.back span{
+    margin-left: 1rem;
+}
+
+.show{
+    display: none;
+}
+
+
+#countrydetailmodal{
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: var(--bg-color);
+}
+
+/* .leftModal {
+    width: 50%
+}
+
+.leftModal img{
+    width: 100%;
+    height: 100%;
+    position: ;
+} */
+
+.rightModal {
+    width: 50%;
+}
+/* .countryModal{
+    position: abso;
+    height: calc(100vh - 3rem);
+    width: 100vw;
+    z-index: 1;
+} */
+
+
+/* responsiveness for smaller screen */
 @media(max-width:425px){
     #Search{
         width: 100px;
@@ -248,5 +324,18 @@ select{
     .drop{
         width: 200px;
         margin-top: 0.5rem;
+    }
+
+
+    .modal{
+        display:block;
+        width: 100%;
+    }
+    .leftModal{
+        width:100vw;
+
+    }
+    .rightModal{
+        width: 100vw;
     }
 }

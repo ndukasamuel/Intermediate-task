@@ -28,36 +28,40 @@
             </div>
         </nav>
 
+        <section class="countryModal">
         <section>
-            <button class="back-btn">
+            <button class="back">
                 <span><i class="fas fa-long-arrow-alt-left"></i></span>
                 <span>Back</span>
             </button>
-        </section class="countryModal">
-            <div class="Modal">
+        </section>
+        <section class="countryModal">
+            <div class="modal">
                 <div class="leftModal">
                     <img src="https://flagcdn.com/as.svg" alt="">
                 </div>
-                <div class="ModalRight">
+                <div class="rightModal">
                     <h5>Germany</h5>
-                    <div class="innerLeft">
-                        <p><strong>Native Name:</strong>${data.population}</p>
-                        <p><strong>Population:</strong>Belgie</p>
-                        <p><strong>Region:</strong>Belgie</p>
-                        <p><strong>Sub Region:</strong>Belgie</p>
-                        <p><strong>Capital:</strong>Belgie</p>
+                    <div class="modalinfo">
+                        <div class="innerLeft">
+                            <p><strong>Native Name:</strong>${data.name.common}</p>
+                            <p><strong>Population:</strong>${data.name.population}</p>
+                            <p><strong>Region:</strong>${data.postalCode.region}</p>
+                            <p><strong>Sub Region:</strong>${data.postalCode.subregion}</p>
+                            <p><strong>Capital:</strong>${data.capital}</p>
+                        </div>
+                        <div class="innerRight">
+                            <p><strong>Top Level Domain:</strong>Belgie</p>
+                            <p><strong>Currencies:</strong>Belgie</p>
+                            <p><strong>Language:</strong>Belgie</p>
+                        </div>
                     </div>
-                    <div class="innerRight" >
-                        <p><strong>Top Level Domain:</strong>Belgie</p>
-                        <p><strong>Currencies:</strong>Belgie</p>
-                        <p><strong>Language:</strong>Belgie</p>
-                    </div>
+                    
                 </div>
             </div>
-        <section>
-
+        </section>
         </section>
 
-
+        <script src="script.js"></script>
 </body>
 </html>
