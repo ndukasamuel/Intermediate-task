@@ -39,7 +39,7 @@ function showCountry(data) {
                 <h5 class="countryName">${data.name.common}</h5>
                 <p><strong>Population:</strong> ${data.population} </p>
                 <p class="regionName"><strong>Region:</strong>${data.region}</p>
-                <p><strong>Capital:</strong>${data.capital}</p>
+                <p class="capital")><strong>Capital:</strong>${data.capital}</p>
             </div>`;
     countriesElement.appendChild(country)
     const detailcontainer = document.getElementById("countrydetailmodal");
